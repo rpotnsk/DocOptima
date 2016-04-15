@@ -1,0 +1,99 @@
+\input{tex/preambula.tex}
+\begin{document}
+	
+\begin{flushright}
+\end{flushright}
+
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+\vspace{\baselineskip}
+
+\begin{center}
+Инструкция\\
+по работе команды торговых представителей\\
+с системой <<Оптима>> \tiny{вер. 1.5.1} 
+\end{center}
+
+
+\begin{multicols}{2}
+\flushleft г. Новосибирск
+\flushright \displaydate{date} 
+\end{multicols}
+
+\toccontents
+
+%\pagenumbering{roman}
+%\tableofcontents
+%\listoffigures
+%\listoftables
+%\clearpage
+%\pagenumbering{arabic}
+%czxc
+\addtocontents{toc}{~\hfill\textbf{Стр.}\par}
+\input{tex/p1.tex}% Алгоритм работы торгового представителя на маршруте
+\input{tex/p2.tex}% Последовательность работы торгового представителя с планшетным устройством
+\input{tex/p3.tex}% Работа в торговой точке
+%\input{tex/p4.tex}
+%\input{tex/p5.tex}
+%\input{tex/p6.tex}
+\input{tex/p8.tex}% Дебиторка
+\input{tex/p9.tex}% Полная синхронизация
+\input{tex/p10.tex}% Ввод временных координат
+\input{tex/p7.tex}% Закрытие программы
+%\input{tex/p11.tex}% Внеплановый визит
+\input{tex/p12.tex}%Описание раздела <<Визиты>>
+\input{tex/p13.tex}%Описание раздела <<Документы>>
+\input{tex/p14.tex}%Описание раздела <<Клиенты>>
+\input{tex/p15.tex}%Описание раздела <<Товары>>
+\input{tex/p16.tex}%Описание раздела <<Баланс>>
+\input{tex/p17.tex}%Описание раздела <<Настройки>>
+\input{tex/p18.tex}%Описание раздела <<Принципы управления>>
+\cleardoublepage
+\addcontentsline{toc}{section}{\listfigurename}
+%\pagestyle{empty}
+%\listoffigures
+%\cleardoublepage
+\begingroup
+\renewcommand\numberline[1]{}
+%\listoffigures\thispagestyle{empty} \newpage
+\emptypage\listoffigures\thispagestyle{empty} \newpage
+\endgroup
+%\listoffigures\thispagestyle{empty} \newpage
+\end{document}
+
+%enumerate latex \subsection
+%
+%If you need it only for a few enumerate environments, instead of setting globally
+%
+%\setlist[enumerate]{leftmargin=*,align=left,label=\thesubsection.\arabic*.}
+%
+%use these settings locally by issuing
+%
+%\begin{enumerate}[leftmargin=*,align=left,label=\thesubsection.\arabic*.]
+%	
+%	Note that you may need to load enumitem with the shortlabels option
+%	
+%	\usepackage[shortlabels]{enumitem}
+%	
+%	if you have already customized enumerate lists.
+
+
+%http://tex.stackexchange.com/questions/227005/alignment-of-enumerate-numbered-by-subsection-and-the-existing-text
+
+%http://tex.stackexchange.com/questions/1126/include-section-number-in-list-number
+
+%latex list enumerate \subsection number
+
+%\begin{wrapfigure}{l}{0.4\linewidth}
+%\includegraphics[width=0.8\linewidth]{img/scr4.jpg} 
+%\caption{Меню синхронизация}\label{pic:pic4}
+%\end{wrapfigure}
+
+%
+%Соглашусь с тов. Const, что при хитром размещении картинок на титульном листе, может оказаться проще использовать точное позиционирование, например, посредством tikz: что-то вроде
+%
+%\begin{tikzpicture}
+%\node at (0,0){\includegraphics{картинка}};
+%\node at (1,0){\includegraphics{картинка}};
+%\end{tikzpicture}
